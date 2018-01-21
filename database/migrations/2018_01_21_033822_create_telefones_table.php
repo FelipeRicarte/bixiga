@@ -22,7 +22,7 @@ class CreateTelefonesTable extends Migration
         });
 
         Schema::table('telefones', function (Blueprint $table) {
-            $table->foreign('cliente_id')->references('id')->on('clientes')
+            $table->foreign('cliente_id')->references('id')->on('clientes');
         });
 
     }

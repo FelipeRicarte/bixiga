@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Telefone extends Model
 {
     public function cliente(){
-        return this->$this->belongsTo('App\Cliente');
+        return $this->belongsTo('App\Cliente');
     }
 }

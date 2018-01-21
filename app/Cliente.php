@@ -11,6 +11,6 @@ class Cliente extends Model
     }
 
     public function addTelefone(Telefone $telefone){
-        return this->telefones()->save($telefone);
+        return $this->telefones()->save($telefone);
     }
 }
