@@ -8,7 +8,7 @@
                     <div class="panel-heading">Clientes</div>
 
                     <div class="panel-body">
-                        <table class="table table-bordered">
+                        <table class="table table-striped table-bordered" id="tabClientes">
                             <thead>
                             <tr>
                                 <th>Identificador</th>
@@ -35,9 +35,6 @@
                             @endforeach
                             </tbody>
                         </table>
-                        <div align="center">
-                            {{!! $clientes->links() !!}}
-                        </div>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        $clientes = \App\Cliente::paginate(10);
+        $clientes = \App\Cliente::all();
         return view('cliente.index',compact('clientes'));
     }
 }
