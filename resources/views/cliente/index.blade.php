@@ -28,6 +28,7 @@
                                     <td>{{$cliente->twitter}}</td>
                                     <td>{{$cliente->instagram}}</td>
                                     <td>
+                                        <a class="btn btn-principal" href="#">Ativar</a>
                                         <a class="btn btn-default" href="#">Editar</a>
                                         <a class="btn btn-danger" href="#">Excluir</a>
                                     </td>
