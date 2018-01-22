@@ -13,12 +13,12 @@
                 <div class="panel-body">
                     <p><b>Cliente: </b>{{ $cliente->nome }}</p>
                     <p><b>E-mail: </b>{{ $cliente->email }}</p>
-                    <p><b>Endereço: </b>{{ $cliente->endereco }}</p>
-                    
+                    <p><b>Instagram: </b>{{ $cliente->instagram }}</p>
+                    <p><b>Twitter: </b>{{ $cliente->twitter }}</p>
+
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>Título</th>
                                 <th>Número</th>                                
                                 <th>Ação</th>
@@ -27,7 +27,6 @@
                         <tbody>                           
                             @foreach($cliente->telefones as $telefone)
                             <tr>
-                                <th scope="row">{{ $telefone->id }}</th>
                                 <td>{{ $telefone->titulo }}</td>
                                 <td>{{ $telefone->telefone }}</td>                                
                                 <td>
@@ -42,7 +41,7 @@
                     </table>
 
                     <p>
-                        <a class="btn btn-info" href="{{route('telefone.adicionar',$cliente->id)}}">Adicinar Telefone</a>
+                        <a class="btn btn-info" href="{{route('telefone.adicionar',$cliente->id)}}">Adicionar Telefone</a>
                     </p>
                     
 
