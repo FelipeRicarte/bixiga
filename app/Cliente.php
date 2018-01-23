@@ -13,4 +13,13 @@ class Cliente extends Model
     public function addTelefone(Telefone $telefone){
         return $this->telefones()->save($telefone);
     }
+
+    public function deletarTelefones()
+    {
+        foreach ($this->telefones as $tel) {
+            $tel->delete();
+        }
+
+        return true;
+    }
 }
