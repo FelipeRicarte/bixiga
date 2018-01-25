@@ -70,6 +70,7 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ route('cliente') }}">Clientes</a>
+                        <a href="{{ route('register') }}">Cadastrar Usuario</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                     @endauth

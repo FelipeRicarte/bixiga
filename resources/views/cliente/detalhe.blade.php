@@ -15,7 +15,12 @@
                     <p><b>E-mail: </b>{{ $cliente->email }}</p>
                     <p><b>Instagram: </b>{{ $cliente->instagram }}</p>
                     <p><b>Twitter: </b>{{ $cliente->twitter }}</p>
+                    <p><b>Data de Cadastro: </b>{{date('d/m/Y',strtotime( $cliente->data ))}} - <b>Data de Expiração: </b>{{ date('d/m/Y',strtotime("+15 days",strtotime( $cliente->data )))}}</p>
 
+
+                    <p>
+                        <a class="btn btn-primary" href="#">Ativar Promoção</a>
+                    </p>
                     <table class="table table-bordered">
                         <thead>
                             <tr>

@@ -24,7 +24,6 @@ class ClienteRequest extends Request
             'email.required'=>'Preencha um e-mail',
             'email.email'=>'Preencha um e-mail válido',
             'email.max'=>'E-mail deve ter até 255 caracteres',
-            'endereco.required'=>'Preencha um endereço'
 
         ];
     }
@@ -39,7 +38,6 @@ class ClienteRequest extends Request
         return [
             'nome'=>'required|max:255',
             'email'=>'required|email|max:255',
-            'endereco'=>'required'
         ];
     }
 }
