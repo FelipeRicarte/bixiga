@@ -32,12 +32,21 @@
                                 </span>
                             @endif
                         </div>
-                        <div class="form-group {{ $errors->has('endereco') ? 'has-error' : '' }}">
-                            <label for="endereco">Endereço</label>
-                            <input type="text" name="endereco" class="form-control" placeholder="Endereço do cliente" value="{{$cliente->endereco}}">
-                            @if($errors->has('endereco'))
+                        <div class="form-group {{ $errors->has('twitter') ? 'has-error' : '' }}">
+                            <label for="twitter">Twitter</label>
+                            <input type="text" name="twitter" class="form-control" placeholder="Endereço do cliente" value="{{$cliente->twitter}}">
+                            @if($errors->has('twitter'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('endereco') }}</strong>
+                                    <strong>{{ $errors->first('twitter') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+                        <div class="form-group {{ $errors->has('instagram') ? 'has-error' : '' }}">
+                            <label for="instagram">Instagram</label>
+                            <input type="text" name="instagram" class="form-control" placeholder="Endereço do cliente" value="{{$cliente->instagram}}">
+                            @if($errors->has('instagram'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('instagram') }}</strong>
                                 </span>
                             @endif
                         </div>

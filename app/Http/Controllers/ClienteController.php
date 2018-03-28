@@ -73,7 +73,7 @@ class ClienteController extends Controller
             'class'=>"alert-success"
         ]);
 
-        return redirect()->route('cliente.index');
+        return redirect()->route('cliente');
 
     }
 
@@ -86,7 +86,7 @@ class ClienteController extends Controller
                 'msg'=>"Registro não pode ser deletado!",
                 'class'=>"alert-danger"
             ]);
-            return redirect()->route('cliente.index');
+            return redirect()->route('cliente');
         }
 
         $cliente->delete();
@@ -96,7 +96,7 @@ class ClienteController extends Controller
             'class'=>"alert-success"
         ]);
 
-        return redirect()->route('cliente.index');
+        return redirect()->route('cliente');
     }
 
 }
