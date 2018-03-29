@@ -19,7 +19,6 @@ class CreateClientesTable extends Migration
             $table->string('email');
             $table->string('instagram');
             $table->string('twitter');
-            $table->date('data');
             $table->timestamps();
         });
     }

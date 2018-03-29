@@ -19,6 +19,5 @@ $factory->define(App\Cliente::class, function (Faker $faker) {
         'email' => $faker->unique()->safeEmail,
         'twitter'=> $faker->safeEmailDomain,
         'instagram'=> $faker->safeEmail,
-        'data'=> $faker->date,
     ];
 });
