@@ -34,7 +34,7 @@
                         </div>
                         <div class="form-group {{ $errors->has('twitter') ? 'has-error' : '' }}">
                             <label for="twitter">Twitter</label>
-                            <input type="text" name="twitter" class="form-control" placeholder="Endereço do cliente" value="{{$cliente->twitter}}">
+                            <input type="text" name="twitter" class="form-control" placeholder="Twitter do cliente" value="{{$cliente->twitter}}">
                             @if($errors->has('twitter'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('twitter') }}</strong>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="form-group {{ $errors->has('instagram') ? 'has-error' : '' }}">
                             <label for="instagram">Instagram</label>
-                            <input type="text" name="instagram" class="form-control" placeholder="Endereço do cliente" value="{{$cliente->instagram}}">
+                            <input type="text" name="instagram" class="form-control" placeholder="Intagram do cliente" value="{{$cliente->instagram}}">
                             @if($errors->has('instagram'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('instagram') }}</strong>
